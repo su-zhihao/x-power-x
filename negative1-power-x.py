@@ -34,5 +34,30 @@ ax.set_title("3D plot of Real and Imaginary parts of y = (-1)^x")
 ax.legend()
 plt.savefig("negative1-power-x.png")
 
+# Clear the plot
+plt.clf()
+
+# Change the perspective to only view the imaginary parts
+for k in k_values:
+    # Calculate (-1)^x using Euler's formula
+    y = np.exp(1j * (2 * np.pi * k + np.pi) * x)
+
+    # Calculate the imaginary part of y
+    y_imag = np.imag(y)
+
+    # Plot the imaginary part
+    plt.plot(x, y_imag, label=f"y = (-1)^x, k={k}")
+
+# Set labels and title
+plt.xlabel("x")
+plt.ylabel("Imaginary")
+plt.title("Plot of y = (-1)^x for different k values")
+
+# Show the legend
+plt.legend()
+
+# Save the plot
+plt.savefig("negative1-imaginary_vs_x.png")
+
 # Show the plot
-plt.show()
+# plt.show()
