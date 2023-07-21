@@ -1,4 +1,6 @@
-# x-power-x: a complex story
+# x to the power of x: a complex story
+
+Curious about the visual representation of x to the power of x? Step into the captivating universe of complex number with complex exponentiation, where boundaries are pushed, and knowledge expands exponentially!
 
 This project aims to visualize the function $y = x^x$ in the complex plane and explain the math behind the generation. My approach to this problem is mostly inspired by [李永乐老师@tchliyongle](https://www.youtube.com/watch?v=6HYZWVYv0WY), a prominent science popularizer and educational video creator from China.
 
