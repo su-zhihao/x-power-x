@@ -6,8 +6,10 @@ from mpl_toolkits.mplot3d import Axes3D
 x_positive = np.linspace(0.01, 2.0, 200)
 x_negative = np.linspace(-3.0, -0.01, 300)
 
-# Define the k values
-k_values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# Define the k values and colors
+k_values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+color2 = "#F7C679"
+color1 = "#618CAC"
 
 # Create a 3D plot
 fig = plt.figure()
@@ -33,8 +35,11 @@ for k in k_values:
     y_real = np.real(y)
     y_imag = np.imag(y)
 
+    # Define the color based on even or odd k
+    color = color1 if k % 2 == 0 else color2
+
     # Plot the real and imaginary parts together
-    ax.plot(x, y_real, y_imag, label=f"y = x^x, k={k}")
+    ax.plot(x, y_real, y_imag, label=f"y = x^x, k={k}", color=color, linewidth=2)
 
 # Set labels and title
 ax.set_xlabel("x")
@@ -71,8 +76,11 @@ for k in k_values:
     y_real = np.real(y)
     y_imag = np.imag(y)
 
+    # Define the color based on even or odd k
+    color = color1 if k % 2 == 0 else color2
+
     # Plot the real and imaginary parts together
-    plt.plot(x, y_imag, label=f"y = x^x, k={k}")
+    plt.plot(x, y_imag, label=f"y = x^x, k={k}", color=color, linewidth=2)
 
 
 # Set labels and title
