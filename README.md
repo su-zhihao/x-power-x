@@ -2,11 +2,11 @@
 
 Curious about the visual representation of x to the power of x? Step into the captivating universe of complex number with complex exponentiation, where boundaries are pushed, and knowledge expands exponentially!
 
-This project aims to visualize the function $y = x^x$ in the complex plane and explain the math behind the generation. My approach to this problem is mostly inspired by [李永乐老师@tchliyongle](https://www.youtube.com/watch?v=6HYZWVYv0WY), a prominent science popularizer and educational video creator from China.
+This project aims to visualize the function $y = x^x$ in the complex plane and explain the math behind the generation. My approach to this problem is mostly inspired by [李永乐老师@tchliyongle](https://www.youtube.com/watch?v=6HYZWVYv0WY), a prominent science popularizer and educational video creator from China. During my research of the problem, I also stumbled across this amazing [post](https://mathematica.stackexchange.com/questions/10594/how-can-i-plot-the-complex-graph-of-xx-in-mathematica/10598#10598?newreg=5f48d5db821a4a2c9e145a78b423052d) on stackexchange. I hope this repository can capture the esscences of this problem and help other math enthusiasts from all levels to engage with it.
 
-## Mathematical Background
+## How it works
 
-TODO
+The function $y = x^x$, while simple in the real number domain, exhibits fascinating properties when extended to the complex plane.The key to understanding these properties lies in Euler's formula, the definition of complex exponentiation, and the multi-valued nature of complex functions. In the code, I use these concepts to define $y = x^x$ in the complex plane and explore its behavior for different integer values of k, which correspond to different "branches" of the multi-valued function. If you need a review or the concepts sound new, you can checkout my math explanation files where I explain the motivations and elaborate on each step that leads to the final result.
 
 ## Files
 
@@ -16,11 +16,11 @@ TODO
 
 The script generates two types of visualizations:
 
-1. A 3D plot of the real and imaginary parts of y = x^x for different k values. This plot shows how the function behaves in the complex plane.
+1. A 3D plot of the real and imaginary parts of y = x^x for different k values in Python. This plot shows how the function behaves in the complex plane.
 
    ![3D plot](x-power-x.png)
 
-2. A 2D plot of the imaginary part of y = x^x against x for different k values. This plot shows how the imaginary part of the function changes with x.
+2. A 2D plot of the imaginary part of y = x^x against x for different k values in Python. This plot shows how the imaginary part of the function changes with x.
 
    ![2D plot](x-power-x-imaginary_vs_x.png)
 
@@ -45,14 +45,12 @@ You can install these libraries using pip:
 pip install -r requirements.txt
 ```
 
-## How it works
-
-TODO
-
-## Exploration and Collaboration
+## Exploration, Collaboration, and Future Development
 
 This is one of my math explorations that delve into the complex behavior of the function $y=x^x$. I invite you to join me in this exciting journey by experimenting with the code, tweaking parameters, and observing the fascinating outcomes.
 
 If you have any suggestions for improving the project, intriguing observations to share, or you encounter any issues while using the code, please let me know. You can submit your suggestions, feedback, or bug reports as issues/pull requests right here on this repository. I value your input and am eager to collaborate with you to make this project even better.
+
+For future directions, I am interested in adding more customization options for the visualizations or creating interactive visualizations, but those will be not my top priority for now.
 
 Feel free to reach out to me at patricsu3675@gmail.com and let us unlock more hidden wonders of mathematics
