@@ -6,15 +6,19 @@ This project aims to visualize the function $y = x^x$ in the complex plane and e
 
 ## How it works
 
-The function $y = x^x$, while simple in the real number domain, exhibits fascinating properties when extended to the complex plane.The key to understanding these properties lies in Euler's formula, the definition of complex exponentiation, and the multi-valued nature of complex functions. In the code, I use these concepts to define $y = x^x$ in the complex plane and explore its behavior for different integer values of k, which correspond to different "branches" of the multi-valued function. If you need a review or the concepts sound new, you can checkout my math explanation files where I explain the motivations and elaborate on each step that leads to the final result.
+The function $y = x^x$, while simple in the real number domain, exhibits fascinating properties when extended to the complex plane.The key to understanding these properties lies in Euler's formula, the definition of complex exponentiation, and the multi-valued nature of complex functions. In the code, I use these concepts to define $y = x^x$ in the complex plane and explore its behavior for different integer values of k, which correspond to different "branches" of the multi-valued function. If you need a review or the concepts sound new, you can checkout my math explanation files (still working on it!) where I explain the motivations and elaborate on each step that leads to the final result.
 
 ## Files
 
-- `x-power-x.py`: This is the main Python script that generates the visualizations.
+- `x-power-x.py`: This is the main Python script that generates the x to the power x visualizations.
+- `x-power-x.nb`: This is the mathematica notebook that generates the x to the power x visualizations. (You need to have mathematica installed to run this notebook after downloading)
+- `negative1-power-x.py`: This is the Python script that generates the -1 to the power x visualizations.
+- `math-explanation.tex`: The latex file for the report (still working on it!)
+- `math-explanation.pdf`: A report that contains my research and report to the problem (still working on it!)
 
 ## Visualizations
 
-The script generates two types of visualizations:
+The Python script generates two types of visualizations:
 
 1. A 3D plot of the real and imaginary parts of y = x^x for different k values in Python. This plot shows how the function behaves in the complex plane.
 
@@ -23,6 +27,8 @@ The script generates two types of visualizations:
 2. A 2D plot of the imaginary part of y = x^x against x for different k values in Python. This plot shows how the imaginary part of the function changes with x.
 
    ![2D plot](x-power-x-imaginary_vs_x.png)
+
+The Mathematica Notebook contains similar plots and also includes some other information that can be used to help understand the different properties of the graph.
 
 ## Usage
 
