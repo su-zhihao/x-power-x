@@ -1,2 +1,10 @@
 env
-math-explanation
+.DS_Store 
+math-explanation/__latexindent_temp_math-explanation.log
+math-explanation/__latexindent_temp_math-explanation.tex
+math-explanation/math-explanation.aux
+math-explanation/math-explanation.fdb_latexmk
+math-explanation/math-explanation.fls
+math-explanation/math-explanation.log
+math-explanation/math-explanation.out
+math-explanation/math-explanation.synctex.gz

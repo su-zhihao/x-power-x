@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     81262,       1604]
-NotebookOptionsPosition[     80097,       1575]
-NotebookOutlinePosition[     80487,       1591]
-CellTagsIndexPosition[     80444,       1588]
+NotebookDataLength[     77120,       1500]
+NotebookOptionsPosition[     75862,       1470]
+NotebookOutlinePosition[     76252,       1486]
+CellTagsIndexPosition[     76209,       1483]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -947,56 +947,58 @@ lO4eWSVg0avbH0+skmBRdFBZzzcB5Ro0LP37R8BLXf+oiwRnnHIKv7aWVPwP
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Manipulate", "[", 
-  RowBox[{
-   RowBox[{"ParametricPlot3D", "[", 
-    RowBox[{
-     RowBox[{"Evaluate", "@", 
-      RowBox[{"Table", "[", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{"x", ",", 
-          RowBox[{"Re", "[", 
-           RowBox[{"Exp", "[", 
-            RowBox[{
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{"Log", "[", 
-                RowBox[{"-", "1"}], "]"}], "+", 
-               RowBox[{"2", " ", "I", " ", "Pi", " ", "k"}]}], ")"}], " ", 
-             "x"}], "]"}], "]"}], ",", 
-          RowBox[{"Im", "[", 
-           RowBox[{"Exp", "[", 
-            RowBox[{
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{"Log", "[", 
-                RowBox[{"-", "1"}], "]"}], "+", 
-               RowBox[{"2", " ", "I", " ", "Pi", " ", "k"}]}], ")"}], " ", 
-             "x"}], "]"}], "]"}]}], "}"}], ",", 
-        RowBox[{"{", 
-         RowBox[{"k", ",", "0", ",", "n"}], "}"}]}], "]"}]}], ",", 
-     RowBox[{"{", 
-      RowBox[{"x", ",", 
-       RowBox[{"-", "4"}], ",", "4"}], "}"}], ",", 
-     RowBox[{"PlotRange", "->", "All"}], ",", 
-     RowBox[{"ViewVertical", "->", 
+ RowBox[{"animation1", " ", "=", " ", 
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"ParametricPlot3D", "[", 
+     RowBox[{
+      RowBox[{"Evaluate", "@", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"x", ",", 
+           RowBox[{"Re", "[", 
+            RowBox[{"Exp", "[", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"Log", "[", 
+                 RowBox[{"-", "1"}], "]"}], "+", 
+                RowBox[{"2", " ", "I", " ", "Pi", " ", "k"}]}], ")"}], " ", 
+              "x"}], "]"}], "]"}], ",", 
+           RowBox[{"Im", "[", 
+            RowBox[{"Exp", "[", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"Log", "[", 
+                 RowBox[{"-", "1"}], "]"}], "+", 
+                RowBox[{"2", " ", "I", " ", "Pi", " ", "k"}]}], ")"}], " ", 
+              "x"}], "]"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "0", ",", "n"}], "}"}]}], "]"}]}], ",", 
       RowBox[{"{", 
-       RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], ",", 
-     RowBox[{"BoxRatios", "->", 
-      RowBox[{"{", 
-       RowBox[{"2", ",", "1", ",", "1"}], "}"}]}], ",", 
-     RowBox[{"ViewPoint", "->", 
-      RowBox[{"{", 
-       RowBox[{"12", ",", "2", ",", "12"}], "}"}]}], ",", 
-     RowBox[{"AxesStyle", "->", "Thick"}], ",", 
-     RowBox[{"PlotLegends", "->", "Automatic"}]}], "]"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"n", ",", "0", ",", "6", ",", "1"}], "}"}]}], "]"}]], "Input",
+       RowBox[{"x", ",", 
+        RowBox[{"-", "4"}], ",", "4"}], "}"}], ",", 
+      RowBox[{"PlotRange", "->", "All"}], ",", 
+      RowBox[{"ViewVertical", "->", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], ",", 
+      RowBox[{"BoxRatios", "->", 
+       RowBox[{"{", 
+        RowBox[{"2", ",", "1", ",", "1"}], "}"}]}], ",", 
+      RowBox[{"ViewPoint", "->", 
+       RowBox[{"{", 
+        RowBox[{"12", ",", "2", ",", "12"}], "}"}]}], ",", 
+      RowBox[{"AxesStyle", "->", "Thick"}], ",", 
+      RowBox[{"PlotLegends", "->", "Automatic"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "0", ",", "6", ",", "1"}], "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.899318793021899*^9, 3.899318810018482*^9}, {
-  3.899325285155285*^9, 3.899325286943721*^9}},
+  3.899325285155285*^9, 3.899325286943721*^9}, {3.900010480921067*^9, 
+  3.900010492030176*^9}},
  CellLabel->
-  "In[119]:=",ExpressionUUID->"d26e5496-b378-414a-bda1-ef732b184518"],
+  "In[141]:=",ExpressionUUID->"d26e5496-b378-414a-bda1-ef732b184518"],
 
 Cell[BoxData[
  TagBox[
@@ -1041,10 +1043,19 @@ Cell[BoxData[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{{3.8993187951503963`*^9, 3.899318812236435*^9}, 
-   3.8993252877024384`*^9},
+   3.8993252877024384`*^9, 3.900010492790081*^9},
  CellLabel->
-  "Out[119]=",ExpressionUUID->"b013606d-93ba-44b6-bdc1-2d56212260e6"]
+  "Out[141]=",ExpressionUUID->"8099695f-e513-419d-977e-1f8d04b5c5f9"]
 }, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<negative1-power-x-animation1.gif\>\"", ",", "animation1"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.900010565496469*^9, 3.900010623023966*^9}, {
+  3.900012090259921*^9, 3.900012097455674*^9}, {3.900012167388999*^9, 
+  3.9000121708547573`*^9}},ExpressionUUID->"0fe5a91e-562d-4f19-977a-\
+3bb75fefc440"],
 
 Cell[CellGroupData[{
 
@@ -1148,7 +1159,7 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`sliderValue$$ = 4., Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`sliderValue$$ = -4., Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
@@ -1221,95 +1232,6 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"Show", "[", 
          RowBox[{
-          RowBox[{"ParametricPlot3D", "[", 
-           RowBox[{
-            RowBox[{"Evaluate", "@", 
-             RowBox[{"Table", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"x", ",", 
-                 RowBox[{"Re", "[", 
-                  RowBox[{"Exp", "[", 
-                   RowBox[{
-                    RowBox[{"(", 
-                    RowBox[{
-                    RowBox[{"Log", "[", 
-                    RowBox[{"-", "1"}], "]"}], "+", 
-                    RowBox[{"2", " ", "I", " ", "Pi", " ", "k"}]}], ")"}], 
-                    " ", "x"}], "]"}], "]"}], ",", 
-                 RowBox[{"Im", "[", 
-                  RowBox[{"Exp", "[", 
-                   RowBox[{
-                    RowBox[{"(", 
-                    RowBox[{
-                    RowBox[{"Log", "[", 
-                    RowBox[{"-", "1"}], "]"}], "+", 
-                    RowBox[{"2", " ", "I", " ", "Pi", " ", "k"}]}], ")"}], 
-                    " ", "x"}], "]"}], "]"}]}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"k", ",", "0", ",", "2"}], "}"}]}], "]"}]}], ",", 
-            RowBox[{"{", 
-             RowBox[{"x", ",", 
-              RowBox[{"-", "4"}], ",", "2"}], "}"}], ",", 
-            RowBox[{"PlotRange", "->", "All"}], ",", 
-            RowBox[{"AxesLabel", "->", 
-             RowBox[{"{", 
-              RowBox[{
-              "\"\<x\>\"", ",", "\"\<Real\>\"", ",", "\"\<Imaginary\>\""}], 
-              "}"}]}], ",", 
-            RowBox[{"PlotLegends", "->", 
-             RowBox[{"Table", "[", 
-              RowBox[{
-               RowBox[{"\"\<k = \>\"", "<>", 
-                RowBox[{"ToString", "[", "k", "]"}]}], ",", 
-               RowBox[{"{", 
-                RowBox[{"k", ",", "0", ",", "2"}], "}"}]}], "]"}]}], ",", 
-            RowBox[{"PlotStyle", "->", 
-             RowBox[{"Table", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"ColorData", "[", "\"\<Rainbow\>\"", "]"}], "[", 
-                RowBox[{"k", "/", "5"}], "]"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"k", ",", "0", ",", "2"}], "}"}]}], "]"}]}]}], "]"}], 
-          ",", 
-          RowBox[{"Graphics3D", "[", 
-           RowBox[{"Table", "[", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"ColorData", "[", "\"\<Rainbow\>\"", "]"}], "[", 
-                RowBox[{"k", "/", "5"}], "]"}], ",", 
-               RowBox[{"PointSize", "[", "Large", "]"}], ",", 
-               RowBox[{"Point", "[", 
-                RowBox[{"{", 
-                 RowBox[{"sliderValue", ",", 
-                  RowBox[{"Re", "[", 
-                   RowBox[{"Exp", "[", 
-                    RowBox[{
-                    RowBox[{"(", 
-                    RowBox[{
-                    RowBox[{"Log", "[", 
-                    RowBox[{"-", "1"}], "]"}], "+", 
-                    RowBox[{"2", " ", "I", " ", "Pi", " ", "k"}]}], ")"}], 
-                    " ", "sliderValue"}], "]"}], "]"}], ",", 
-                  RowBox[{"Im", "[", 
-                   RowBox[{"Exp", "[", 
-                    RowBox[{
-                    RowBox[{"(", 
-                    RowBox[{
-                    RowBox[{"Log", "[", 
-                    RowBox[{"-", "1"}], "]"}], "+", 
-                    RowBox[{"2", " ", "I", " ", "Pi", " ", "k"}]}], ")"}], 
-                    " ", "sliderValue"}], "]"}], "]"}]}], "}"}], "]"}]}], 
-              "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"k", ",", "0", ",", "2"}], "}"}]}], "]"}], "]"}]}], 
-         "]"}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"Show", "[", 
-         RowBox[{
           RowBox[{"ParametricPlot", "[", 
            RowBox[{
             RowBox[{"Evaluate", "@", 
@@ -1335,6 +1257,7 @@ Cell[BoxData[
             RowBox[{"AxesLabel", "->", 
              RowBox[{"{", 
               RowBox[{"\"\<x\>\"", ",", "\"\<Real\>\""}], "}"}]}], ",", 
+            "\[IndentingNewLine]", 
             RowBox[{"PlotStyle", "->", 
              RowBox[{"Table", "[", 
               RowBox[{
@@ -1453,19 +1376,20 @@ Cell[BoxData[
      RowBox[{"sliderValue", ",", 
       RowBox[{"-", "4"}], ",", "2"}], "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.899582622701906*^9, 3.899582622707939*^9}, {
-  3.8995827027980824`*^9, 3.8995827028043013`*^9}},
+   3.8995827027980824`*^9, 3.8995827028043013`*^9}, 3.8995828656936283`*^9, {
+   3.8995829299621353`*^9, 3.899582930282756*^9}},
  CellLabel->
-  "In[134]:=",ExpressionUUID->"99139fc3-a36e-498b-a8bb-121d9a131c2c"],
+  "In[139]:=",ExpressionUUID->"99139fc3-a36e-498b-a8bb-121d9a131c2c"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`sliderValue$$ = 0.6600000000000001, 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+   DynamicModuleBox[{$CellContext`sliderValue$$ = 2., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`sliderValue$$], -4, 2}}, Typeset`size$$ = {
-    205., {214., 218.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    360., {227., 231.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`sliderValue$$ = -4}, 
@@ -1475,36 +1399,6 @@ Cell[BoxData[
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> GraphicsGrid[{{
-          Show[
-           ParametricPlot3D[
-            Evaluate[
-             Table[{$CellContext`x, 
-               Re[
-                Exp[(Log[-1] + 2 I Pi $CellContext`k) $CellContext`x]], 
-               Im[
-                
-                Exp[(Log[-1] + 
-                  2 I Pi $CellContext`k) $CellContext`x]]}, {$CellContext`k, 
-               0, 2}]], {$CellContext`x, -4, 2}, PlotRange -> All, 
-            AxesLabel -> {"x", "Real", "Imaginary"}, PlotLegends -> 
-            Table["k = " <> ToString[$CellContext`k], {$CellContext`k, 0, 2}],
-             PlotStyle -> Table[
-              ColorData[
-              "Rainbow"][$CellContext`k/5], {$CellContext`k, 0, 2}]], 
-           Graphics3D[
-            Table[{
-              ColorData["Rainbow"][$CellContext`k/5], 
-              PointSize[Large], 
-              Point[{$CellContext`sliderValue$$, 
-                Re[
-                 
-                 Exp[(Log[-1] + 
-                   2 I Pi $CellContext`k) $CellContext`sliderValue$$]], 
-                Im[
-                 
-                 Exp[(Log[-1] + 
-                   2 I Pi $CellContext`k) $CellContext`sliderValue$$]]}]}, \
-{$CellContext`k, 0, 2}]]]}, {
           Show[
            ParametricPlot[
             Evaluate[
@@ -1557,7 +1451,7 @@ Cell[BoxData[
 {$CellContext`k, 0, 2}]]]}}], 
       "Specifications" :> {{$CellContext`sliderValue$$, -4, 2}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{288., {259., 264.}},
+     ImageSizeCache->{404., {272., 277.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1568,13 +1462,14 @@ Cell[BoxData[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.899582632136511*^9, 3.899582712862747*^9},
+ CellChangeTimes->{3.89958280393305*^9, 3.899582867509694*^9, 
+  3.8995829426429977`*^9},
  CellLabel->
-  "Out[134]=",ExpressionUUID->"a5e9fe49-4272-4b64-bb91-9b517c60daf0"]
+  "Out[139]=",ExpressionUUID->"087ebc09-9034-4474-bb5b-539d845ebbe9"]
 }, Open  ]]
 },
-WindowSize->{906, 871},
-WindowMargins->{{4, Automatic}, {Automatic, 4}},
+WindowSize->{871, 874},
+WindowMargins->{{5, Automatic}, {1, Automatic}},
 FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (June 3, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"7f2d7712-22e8-4896-a370-f8c94d50d549"
@@ -1595,16 +1490,17 @@ Cell[580, 22, 1161, 30, 52, "Input",ExpressionUUID->"a0034742-0d14-4fdd-b9b1-e6e
 Cell[1744, 54, 53317, 889, 207, "Output",ExpressionUUID->"22788a9b-39d7-404f-b952-57d4522e9ea2"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[55098, 948, 1877, 50, 115, "Input",ExpressionUUID->"d26e5496-b378-414a-bda1-ef732b184518"],
-Cell[56978, 1000, 2087, 45, 470, "Output",ExpressionUUID->"b013606d-93ba-44b6-bdc1-2d56212260e6"]
+Cell[55098, 948, 2013, 52, 136, "Input",ExpressionUUID->"d26e5496-b378-414a-bda1-ef732b184518"],
+Cell[57114, 1002, 2109, 45, 470, "Output",ExpressionUUID->"8099695f-e513-419d-977e-1f8d04b5c5f9"]
+}, Open  ]],
+Cell[59238, 1050, 356, 7, 30, "Input",ExpressionUUID->"0fe5a91e-562d-4f19-977a-3bb75fefc440"],
+Cell[CellGroupData[{
+Cell[59619, 1061, 3628, 95, 241, "Input",ExpressionUUID->"3cef2e18-966c-48dc-948c-aeedb7291c49"],
+Cell[63250, 1158, 2670, 61, 304, "Output",ExpressionUUID->"d1f6168a-54c5-4ce1-bb74-ebba7024218e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[59102, 1050, 3628, 95, 241, "Input",ExpressionUUID->"3cef2e18-966c-48dc-948c-aeedb7291c49"],
-Cell[62733, 1147, 2669, 61, 304, "Output",ExpressionUUID->"d1f6168a-54c5-4ce1-bb74-ebba7024218e"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[65439, 1213, 9974, 244, 451, "Input",ExpressionUUID->"99139fc3-a36e-498b-a8bb-121d9a131c2c"],
-Cell[75416, 1459, 4665, 113, 1808, "Output",ExpressionUUID->"a5e9fe49-4272-4b64-bb91-9b517c60daf0"]
+Cell[65957, 1224, 6401, 157, 304, "Input",ExpressionUUID->"99139fc3-a36e-498b-a8bb-121d9a131c2c"],
+Cell[72361, 1383, 3485, 84, 568, "Output",ExpressionUUID->"087ebc09-9034-4474-bb5b-539d845ebbe9"]
 }, Open  ]]
 }
 ]
